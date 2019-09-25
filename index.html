@@ -6,8 +6,6 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 
 <script type="text/javascript" src="https://static.codehs.com/gulp/90cbccae070ebb78348e32eec045731e06fb16eb/chs-js-lib/chs.js"></script>
-
-
 <style>
 canvas {
     border: 1px solid black;
@@ -138,7 +136,7 @@ var fasterFireRate = new Circle(10);
 fasterFireRate.setColor(Color.green);
 
 // Graphics
-var background = new WebImage("https://opengameart.org/sites/default/files/backgrounddetailed8.png");
+
 var midLine = new Line(0, getHeight()/2, getWidth(), getHeight()/2);
 midLine.setLineWidth(5);
 var healthBoostActive = false;
@@ -160,7 +158,7 @@ p1Wall.setPosition(player1.getX(), player1.getY());
 function start(){
     // Adding Graphics
     remove(winText);
-    add(background);
+
     add(startButton);
     add(startText);
     mouseMoveMethod(onMouseMove);
