@@ -539,7 +539,8 @@ function onMouseClick(e){
             add(p1bottomLine);
             add(p1HealthBar);
             
-            
+            println("Player 1 Controls: Arrow keys to move, P to shoot");
+	    println("Player 2 Controls: WASD to move, Space to shoot");
             setTimer(movement, 1000/gameSpeed);
             keyDownMethod(movementKeysDown);
             keyUpMethod(movementKeysUp);
